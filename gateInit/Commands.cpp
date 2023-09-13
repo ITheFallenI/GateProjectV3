@@ -15,9 +15,13 @@ void Commands::ProcessCommand(String m_Command){
   if(t_Command.equals("stop") || t_Command.equals("emergencystop")){
       gates.EmergencyStop();
   }else if(t_Command.equals("opengate")){
-      //gates.OpenGates(unsigned int m_delayBetweenOpening, unsigned int m_leftGateOpeningTime, unsigned int m_rightGateOpeningTime, unsigned int m_delayForLock);
-  }else if(t_Command.equals("closegate")){
-    
+      Serial.println("Command OpenGate");
+      gates.OpenGates(8000, 16600, 16100, 2000);
+  }else if(t_Command.equals("closegate")){   
+      Serial.println("Command CloseGate");
+      gates.CloseGates(8000, 16600, 16100, 2000);
+  }else if(t_Command.equals("gatestate")){
+      Serial.println(gates.ReturnGateState());
   }else{
       Serial.println("Invalid command");
   }

@@ -17,12 +17,12 @@ class Pins{
   #define MOTOR_1_UP 23      //mains to motor #1 up
   #define MOTOR_1_DOWN 27    //mains to motor #1 up
 
-  struct myMap{
-    String key;
-    int value;
-  };
 
   private:
+    struct myMap{
+      String key;
+      int value;
+    };
 
   public:
     void Setup();

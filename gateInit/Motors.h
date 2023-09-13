@@ -29,8 +29,7 @@ class Motors{
     void CloseMotor_2_On();  
     void CloseMotor_2_Off();
 
-
-
+    void TurnOffAll();
 };
 
 #endif

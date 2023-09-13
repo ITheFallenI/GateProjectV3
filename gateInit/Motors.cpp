@@ -66,3 +66,11 @@ void Motors::ToggleBools(int pinID)
         break; 
     }
 }
+
+void Motors::TurnOffAll(){
+  OpenMotor_1_Off();
+  CloseMotor_1_Off();
+
+  OpenMotor_2_Off(); 
+  CloseMotor_2_Off();
+}

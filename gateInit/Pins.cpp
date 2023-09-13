@@ -35,6 +35,5 @@ void Pins::Setup(){
 }
 
 int Pins::STOPBUTTON(){
-  int stopID = STOP_BUTTON;
-  return stopID;
+  return STOP_BUTTON;
 }
